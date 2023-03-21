@@ -1,14 +1,16 @@
 import React from 'react';
 import NavBar from './components/Navbar';
-
-
+import CartWidget from './components/CartWidget';
+import itemListConteiner from './components/ItemListConteiner';
 
 const App = () => {
   return (
     <div>
       
-      <NavBar icono="./assets/carrito.svg"  imagen="./assets/Pelota.jpg"/>
+      <NavBar   imagen='src/assets/Pelota.jpg' />
+      <CartWidget icono="src/assets/carrito.svg"/>
       
+      <itemListConteiner texto = "Mensaje" />
     </div>
   )
 }

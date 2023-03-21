@@ -2,18 +2,16 @@ import React from 'react'
 import styles from "./navbar.module.scss"
 
 
-const NavBar = ({icono, imagen}) => {
+const NavBar = ({imagen}) => {
   return (
     <nav>
       <div className={styles.container}>
             <img src={imagen} alt="" width="40" height="40"/>
-            <p>Home</p>
-            <p>About</p>
-            <p>Productos</p>
-            <img src={icono} alt="" width="40" height="40"/>
-            <button>Registrarse</button>
-        
-        
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Productos</li>
+            </ul>        
       </div>
     </nav>
   )
